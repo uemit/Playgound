@@ -1,0 +1,21 @@
+import UIKit
+
+let k = 360.0
+let inter = 1.06
+let timeDouble = 20.0
+let timeInt = 20
+
+var sum = 0.0
+
+for i in 0..<timeInt
+{
+    sum = sum + k
+    sum = sum * inter
+}
+
+let kTwenty = (timeDouble * k)
+
+print("Investment per month:", k, "€")
+print("Interest per year:", inter, "%")
+print("Raw Investment after", timeInt, "years:", kTwenty, "€")
+print("Investment with Interest after", timeInt, "years:", sum, "€")
